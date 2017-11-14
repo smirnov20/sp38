@@ -6,10 +6,11 @@ body {
 }
 .first {
     background-color: olive;
-        width: 150px;
+    width: 150px;
     border: 1px solid black;
     text-align: center;
     margin: 20px 10px 20px 10px;
+	box-shadow: 2px 3px 5px 2px black;
 }
 .second {
     background-color: beige;
@@ -17,6 +18,7 @@ body {
     border: 1px solid black;
     text-align: center;
     margin: 20px 10px 20px 10px;
+	box-shadow: 2px 3px 5px 2px black;
 }
 .third {
     background-color: yellow;
@@ -24,6 +26,7 @@ body {
     border: 1px solid black;
     text-align: center;
     margin: 20px 10px 20px 10px;
+	box-shadow: 2px 3px 5px 2px black;
 }
 .fourth {
 	background-color: white;
@@ -31,4 +34,5 @@ body {
     border: 1px solid black;
     text-align: center;
     margin: 20px 10px 20px 10px;
+	box-shadow: 2px 3px 5px 2px black;
 }
