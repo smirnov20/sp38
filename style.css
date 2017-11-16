@@ -11,6 +11,12 @@ body {
     text-align: center;
     margin: 20px 10px 20px 10px;
 	box-shadow: 2px 3px 5px 2px black;
+	animation: vanish 7s infinite ease;
+}
+@keyframes vanish {
+	0% 	 {opacity: 1}
+	50%  {opacity: 0}
+	100% {opacity: 1}
 }
 .second {
     background-color: beige;
@@ -19,21 +25,51 @@ body {
     text-align: center;
     margin: 20px 10px 20px 10px;
 	box-shadow: 2px 3px 5px 2px black;
+	animation: pulse 1.4s infinite ease;
+}
+@keyframes pulse {
+	0% {transform: scale(1)}
+	50% {transform: scale(1.2)}
+	100% {transform: scale(1)}
 }
 .third {
     background-color: yellow;
     width: 150px;
+	height: 150px;
     border: 1px solid black;
     text-align: center;
     margin: 20px 10px 20px 10px;
-	box-shadow: 2px 3px 5px 2px black;
+	box-shadow: 3px 3px 15px 2px black;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	animation: change 10s infinite ease-out;
 }
+@keyframes change {
+	0%   {background-color: yellow}
+	25%  {background-color: lightpink}
+	50%  {background-color: lightblue}
+	75%  {background-color: greenyellow}
+	100% {background-color: yellow}
+}
+.third .line {
+	border: 1px dotted black;
+	width: 110px;
+	animation: rotate 5s infinite linear;
+}
+/* Another animation is written here and it's rotating backwards*/
+@keyframes rotate {
+	from { transform: rotate(0deg); }
+	to { transform: rotate(-360deg); }
+}
+
 .fourth {
 	background-color: white;
 	width: 150px;
     border: 1px solid black;
     text-align: center;
-    margin: 20px 10px 20px 10px;
+    margin: 50px 10px 20px 10px;
 	box-shadow: 2px 3px 5px 2px black;
 	/* То, что находится между слешами со звездочками - комментарии, редактор их за код не принимает. Они могут быть использованы для объяснение какого-то куска кода, чтобы напарник лучше понимал происходящее. Когда прочитаешь. попробуй сделать такой комментарий в любом месте кода, но только в файле .css, в .html другие символы используются для комментариев. И теперь загляни в index.html */
 	animation: spin 4s infinite ease-out;
